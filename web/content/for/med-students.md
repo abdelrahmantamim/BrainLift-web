@@ -1,0 +1,84 @@
+---
+title: "Turn Lectures Into Flashcards for Med School"
+metaTitle: "Med School Flashcards From Your Own Lectures"
+description: "Make spaced-repetition cards and quizzes from lecture PDFs and anatomy lab photos, then drill the questions you get wrong until they stick."
+date: 2026-10-31
+order: 2
+tags: [audience]
+---
+
+Med school exams pull from two places at once: the big shared body of knowledge every student learns, and the specific slides your faculty wrote. Block exams reward knowing exactly what your lecturer emphasized, and that material rarely lives in anyone else's deck.
+
+## Where studying for medicine breaks down
+
+### Your lectures are not in the premade decks
+
+Community decks cover the high-yield core well, but they cannot know that your renal lecturer spent twenty minutes on one transporter. Drop the lecture PDF into BrainLift and you get a deck built from those exact slides, ready the same afternoon.
+
+### Making cards competes with reviewing them
+
+Turning a 60-slide lecture into good cards can take longer than the lecture itself. When that happens every day, card-making quietly replaces actual review. BrainLift drafts the cards and a quiz for you, so your time goes into answering questions instead of formatting them.
+
+### Anatomy is visual and hard to put into words
+
+Lab sessions happen around cadavers and models, and your notes end up as sketches and labels. Snap a photo of your lab sheet or a labeled diagram and BrainLift generates questions from it. If a relationship still does not click, ask the AI tutor to explain it; it can respond with diagrams and charts as well as text.
+
+## What a generated quiz looks like for medicine
+
+**1. Which beta blocker is selective for beta-1 receptors at usual doses?**
+A) Propranolol
+B) Metoprolol (correct)
+C) Nadolol
+D) Timolol
+*Why:* Metoprolol is cardioselective; propranolol, nadolol, and timolol block both beta-1 and beta-2 receptors.
+
+**2. Which nerve innervates the deltoid muscle?**
+A) Radial nerve
+B) Musculocutaneous nerve
+C) Axillary nerve (correct)
+D) Suprascapular nerve
+*Why:* The axillary nerve wraps around the surgical neck of the humerus to supply the deltoid and teres minor.
+
+**3. Loop diuretics act by inhibiting which transporter?**
+A) Na-K-2Cl cotransporter in the thick ascending limb (correct)
+B) Na-Cl cotransporter in the distal convoluted tubule
+C) Epithelial sodium channel in the collecting duct
+D) Carbonic anhydrase in the proximal tubule
+*Why:* Furosemide blocks NKCC2; thiazides act on the distal tubule, amiloride on ENaC, and acetazolamide on carbonic anhydrase.
+
+| Front | Back |
+|---|---|
+| Origin of sternocleidomastoid | Manubrium and medial third of the clavicle |
+| Rotator cuff muscles | Supraspinatus, infraspinatus, teres minor, subscapularis |
+| Ligament that resists anterior tibial translation | Anterior cruciate ligament |
+| Pathway measured by PT | Extrinsic and common pathways (factor VII) |
+
+Your faculty's slides and assigned texts are the standard for your exams, so cross-check generated cards with them before you trust them.
+
+## How it works
+
+1. Upload the lecture PDF or a photo of your lab notes.
+2. Pick a difficulty and question count, then work through the quiz while the lecture is still fresh.
+3. Send the misses to "practice my mistakes" and let spaced review bring those cards back before the block exam.
+
+## Study habits that work for medicine
+
+Keep two streams going. Use a large community deck for the shared core, and a smaller lecture deck for what your school tests. One observational study linked Anki use with higher licensing exam scores, though the data was self-reported and cannot show cause ([Lu et al., 2021](https://pmc.ncbi.nlm.nih.gov/articles/PMC8651966)). The lesson is consistency, not any single app.
+
+Do your new lecture cards the same day, then trust the schedule. Rate yourself honestly; marking a shaky card as easy only pushes it out past exam day. For muscle-heavy blocks, see our guide to [memorizing origins and insertions](/blog/memorize-muscle-origins-insertions/), and our walkthrough on [flashcards from lecture notes](/blog/flashcards-from-lecture-notes/) covers how to keep cards short. If you already use Anki, our [BrainLift vs Anki comparison](/compare/brainlift-vs-anki/) explains how the two can sit side by side.
+
+You can [download BrainLift for iPhone and iPad](https://apps.apple.com/us/app/brainlift-ai-quiz-flashcard/id6749842070) and try it on tomorrow's lecture.
+
+## FAQ
+
+### Does it replace the big community decks?
+
+No. Those decks are built for the shared core. BrainLift is for the lecture-specific material your school writes its own questions from.
+
+### How does the review schedule work?
+
+After each card you rate how well you remembered it. Cards you struggle with come back sooner, and cards you know well are spaced further apart.
+
+### Is the medical content checked by a physician?
+
+No. Everything is generated by AI from your uploads and can contain mistakes. Check cards against your lecture slides and references, especially for doses and lab values.

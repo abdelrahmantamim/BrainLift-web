@@ -1,0 +1,118 @@
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+.env.staging
+.env.test
+.env.*
+!.env.example
+
+# Project specific folders
+.claude/
+.agents/
+.transcripts/
+
+#Next.js
+.next/
+
+# Node modules
+node_modules/
+
+# VSCode
+.vscode
+Other_Stuff
+
+# Logs
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Editor directories and files
+.idea/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+.coverage
+htmlcov/
+.pytest_cache/
+.hypothesis/
+
+# Build outputs
+dist/
+build/
+out/
+*.map
+*.min.js
+*.min.css
+bundle.js
+
+# TypeScript
+*.tsbuildinfo
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+tmp/
+temp/
+
+# Mobile specific
+.expo/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+
+# Misc
+.sass-cache/
+.connect.lock
+.lock-wscript
+.playwright-mcp
+

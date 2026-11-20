@@ -1,0 +1,40 @@
+# BrainLift
+
+> Study app that turns photos of notes, PDFs, typed notes or a topic into quizzes and flashcard decks, then helps students remember them with spaced repetition and practice decks built from their own mistakes.
+
+BrainLift is for high school, college, nursing, medical, law and language students and certification candidates. It is available for iPhone and iPad (App Store id 6749842070) and as a web app at https://getbrainlift.app. It launched in March 2026 and is built by an independent developer.
+
+## Features
+
+- **Photo, PDF, text or topic to quiz**: Photograph notes or a textbook page, upload a PDF, paste notes or name a topic. Choose difficulty and question count.
+- **Flashcard decks**: Generated from the same material, one idea per card.
+- **Practice my mistakes**: Questions missed on a quiz become a flashcard deck with answers and explanations.
+- **Spaced repetition**: Rate each card after answering; the schedule decides when it comes back.
+- **AI tutor chat**: Explanations, worked examples, charts and diagrams.
+- **Sharing**: Send a quiz or deck to classmates by link or QR code.
+- **Habit features**: XP, 10 levels, daily quests, streaks and achievements.
+
+## How AI is used
+
+Submitted content is processed by third-party AI providers (OpenAI and Google Gemini) to generate study material. AI-generated content can contain mistakes; users are told to check important answers against their course materials.
+
+## Pricing
+
+- **Free**: all core features with monthly usage limits.
+- **Premium**: $6.99 per month, $49.99 per year, or $2.99 per week (US App Store prices). Raises limits and unlocks additional features.
+
+## Platforms
+
+- iPhone and iPad (iOS 15.1 or later)
+- Web browser
+- No Android app yet
+
+## Pages
+
+- Blog: https://getbrainlift.app/blog/
+- Who it's for: https://getbrainlift.app/for/
+- Comparisons: https://getbrainlift.app/compare/
+- Press kit: https://getbrainlift.app/press/
+- Help: https://getbrainlift.app/help
+- Terms: https://getbrainlift.app/terms
+- Privacy: https://getbrainlift.app/privacy

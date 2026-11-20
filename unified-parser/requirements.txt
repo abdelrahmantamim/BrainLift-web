@@ -1,0 +1,70 @@
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+
+# Document Parsing
+python-docx==1.1.0
+python-pptx==0.6.23  # For consistency with existing service
+pdfplumber==0.10.3
+pymupdf==1.24.5
+camelot-py[cv]==0.11.0  # For advanced table extraction
+openpyxl==3.1.2  # Excel support
+
+# OCR and Image Processing
+easyocr==1.7.0
+opencv-python==4.8.1.78
+Pillow==10.1.0
+numpy==1.24.3
+pytesseract==0.3.10  # Alternative OCR
+
+# NLP and Text Processing
+spacy==3.7.2
+langchain==0.0.340
+langchain-community==0.0.10
+tiktoken==0.5.1
+nltk==3.8.1
+transformers==4.35.2  # For advanced NLP features
+
+# Language Detection
+langdetect==1.0.9
+# franc-py removed - doesn't exist on PyPI, using langdetect instead
+
+# Database and Caching
+supabase==2.0.3
+redis==5.0.1
+celery==5.3.4
+
+# Utilities
+python-magic==0.4.27  # File type detection
+chardet==5.2.0  # Character encoding detection
+beautifulsoup4==4.12.2  # HTML parsing if needed
+lxml==4.9.3
+
+# API and Async
+httpx==0.24.1
+aiofiles==23.2.1
+asyncio==3.4.3
+
+# Monitoring and Logging
+sentry-sdk[fastapi]==1.38.0
+prometheus-client==0.19.0
+structlog==23.2.0
+
+# Development
+pytest==7.4.3
+pytest-asyncio==0.21.1
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+black==23.11.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Test data generation
+reportlab==4.0.7
+PyPDF2==3.0.1
+
+# Production
+gunicorn==21.2.0
+supervisor==4.2.5

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7c3aed">
+    <meta name="description" content="Turn photos of your notes, PDFs or a topic into quizzes and flashcards in about a minute. Study with spaced repetition and practice what you got wrong. Free to start.">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="BrainLift — AI Flashcards, Quizzes & Tutor" />
+    <meta property="og:description" content="Upload any study material and let AI instantly create quizzes, flashcards, and summaries. Free to get started." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://getbrainlift.app" />
+    <meta property="og:image" content="https://getbrainlift.app/og/default.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="BrainLift" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="BrainLift — AI Flashcards, Quizzes & Tutor" />
+    <meta name="twitter:description" content="Upload any study material and let AI instantly create quizzes, flashcards, and summaries. Free to get started." />
+    <meta name="twitter:image" content="https://getbrainlift.app/og/default.png" />
+
+    <!-- iOS Smart App Banner -->
+    <meta name="apple-itunes-app" content="app-id=6749842070" />
+    <link rel="canonical" href="https://getbrainlift.app/" />
+    <link rel="alternate" type="application/rss+xml" title="BrainLift blog" href="https://getbrainlift.app/blog/rss.xml" />
+    <script type="application/ld+json">
+    {"@context":"https://schema.org","@graph":[
+      {"@type":"Organization","@id":"https://getbrainlift.app/#org","name":"BrainLift","url":"https://getbrainlift.app","logo":"https://getbrainlift.app/icon-512x512.png"},
+      {"@type":"WebSite","@id":"https://getbrainlift.app/#website","url":"https://getbrainlift.app","name":"BrainLift","publisher":{"@id":"https://getbrainlift.app/#org"}},
+      {"@type":"SoftwareApplication","name":"BrainLift: AI Quiz + Flashcard","operatingSystem":"iOS, iPadOS, Web","applicationCategory":"EducationalApplication","url":"https://getbrainlift.app","downloadUrl":"https://apps.apple.com/us/app/brainlift-ai-quiz-flashcard/id6749842070","offers":{"@type":"Offer","price":"0","priceCurrency":"USD","description":"Free to start. Optional Premium subscription."},"description":"Turn photos of notes, PDFs, or a topic into quizzes and flashcards. Study with spaced repetition, practice your mistakes, and ask an AI tutor.","publisher":{"@id":"https://getbrainlift.app/#org"}}
+    ]}
+    </script>
+
+    <title>BrainLift — AI Flashcards, Quizzes & Tutor</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <div id="modal-root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      // Register service worker with update on reload
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js', { updateViaCache: 'none' })
+            .then(registration => {
+              // Check for updates periodically
+              registration.update();
+            })
+            .catch(error => console.log('SW registration failed:', error));
+        });
+      }
+    </script>
+  </body>
+</html>

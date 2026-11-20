@@ -1,0 +1,861 @@
+[
+  {
+    "type": "flow",
+    "prompt": "Create a flow chart showing the process of making coffee:\n1. Start\n2. Check if coffee beans available\n3. If yes, grind beans\n4. If no, buy coffee beans then grind\n5. Add water to machine\n6. Brew coffee\n7. Pour into cup\n8. End",
+    "response": "```json\n{\n  \"type\": \"flow\",\n  \"title\": \"Coffee Making Process\",\n  \"data\": {\n    \"nodes\": [\n      {\n        \"id\": \"start\",\n        \"label\": \"Start\",\n        \"type\": \"start\"\n      },\n      {\n        \"id\": \"check_beans\",\n        \"label\": \"Check if coffee beans available\",\n        \"type\": \"decision\"\n      },\n      {\n        \"id\": \"grind_beans\",\n        \"label\": \"Grind beans\",\n        \"type\": \"process\"\n      },\n      {\n        \"id\": \"buy_beans\",\n        \"label\": \"Buy coffee beans\",\n        \"type\": \"process\"\n      },\n      {\n        \"id\": \"add_water\",\n        \"label\": \"Add water to machine\",\n        \"type\": \"process\"\n      },\n      {\n        \"id\": \"brew_coffee\",\n        \"label\": \"Brew coffee\",\n        \"type\": \"process\"\n      },\n      {\n        \"id\": \"pour_cup\",\n        \"label\": \"Pour into cup\",\n        \"type\": \"process\"\n      },\n      {\n        \"id\": \"end\",\n        \"label\": \"End\",\n        \"type\": \"end\"\n      }\n    ],\n    \"edges\": [\n      {\n        \"from\": \"start\",\n        \"to\": \"check_beans\"\n      },\n      {\n        \"from\": \"check_beans\",\n        \"to\": \"grind_beans\",\n        \"label\": \"Yes\",\n        \"type\": \"conditional\"\n      },\n      {\n        \"from\": \"check_beans\",\n        \"to\": \"buy_beans\",\n        \"label\": \"No\",\n        \"type\": \"conditional\"\n      },\n      {\n        \"from\": \"buy_beans\",\n        \"to\": \"grind_beans\"\n      },\n      {\n        \"from\": \"grind_beans\",\n        \"to\": \"add_water\"\n      },\n      {\n        \"from\": \"add_water\",\n        \"to\": \"brew_coffee\"\n      },\n      {\n        \"from\": \"brew_coffee\",\n        \"to\": \"pour_cup\"\n      },\n      {\n        \"from\": \"pour_cup\",\n        \"to\": \"end\"\n      }\n    ]\n  }\n}\n```",
+    "chartData": {
+      "type": "flow",
+      "title": "Coffee Making Process",
+      "data": {
+        "nodes": [
+          {
+            "id": "start",
+            "label": "Start",
+            "type": "start"
+          },
+          {
+            "id": "check_beans",
+            "label": "Check if coffee beans available",
+            "type": "decision"
+          },
+          {
+            "id": "grind_beans",
+            "label": "Grind beans",
+            "type": "process"
+          },
+          {
+            "id": "buy_beans",
+            "label": "Buy coffee beans",
+            "type": "process"
+          },
+          {
+            "id": "add_water",
+            "label": "Add water to machine",
+            "type": "process"
+          },
+          {
+            "id": "brew_coffee",
+            "label": "Brew coffee",
+            "type": "process"
+          },
+          {
+            "id": "pour_cup",
+            "label": "Pour into cup",
+            "type": "process"
+          },
+          {
+            "id": "end",
+            "label": "End",
+            "type": "end"
+          }
+        ],
+        "edges": [
+          {
+            "from": "start",
+            "to": "check_beans"
+          },
+          {
+            "from": "check_beans",
+            "to": "grind_beans",
+            "label": "Yes",
+            "type": "conditional"
+          },
+          {
+            "from": "check_beans",
+            "to": "buy_beans",
+            "label": "No",
+            "type": "conditional"
+          },
+          {
+            "from": "buy_beans",
+            "to": "grind_beans"
+          },
+          {
+            "from": "grind_beans",
+            "to": "add_water"
+          },
+          {
+            "from": "add_water",
+            "to": "brew_coffee"
+          },
+          {
+            "from": "brew_coffee",
+            "to": "pour_cup"
+          },
+          {
+            "from": "pour_cup",
+            "to": "end"
+          }
+        ]
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "bar",
+    "prompt": "Create a bar chart showing sales data:\n- January: $45,000\n- February: $52,000\n- March: $48,000\n- April: $61,000\n- May: $58,000",
+    "response": "```json\n{\n  \"type\": \"bar\",\n  \"title\": \"Monthly Sales Data\",\n  \"data\": {\n    \"labels\": [\n      \"January\",\n      \"February\",\n      \"March\",\n      \"April\",\n      \"May\"\n    ],\n    \"datasets\": [\n      {\n        \"label\": \"Sales ($)\",\n        \"data\": [\n          45000,\n          52000,\n          48000,\n          61000,\n          58000\n        ],\n        \"backgroundColor\": \"rgba(75, 192, 192, 0.8)\"\n      }\n    ]\n  }\n}\n```",
+    "chartData": {
+      "type": "bar",
+      "title": "Monthly Sales Data",
+      "data": {
+        "labels": [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May"
+        ],
+        "datasets": [
+          {
+            "label": "Sales ($)",
+            "data": [
+              45000,
+              52000,
+              48000,
+              61000,
+              58000
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.8)"
+          }
+        ]
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "line",
+    "prompt": "Create a line chart showing website traffic over a week:\n- Monday: 1200 visitors\n- Tuesday: 1500 visitors\n- Wednesday: 1800 visitors\n- Thursday: 2100 visitors\n- Friday: 2300 visitors\n- Saturday: 1900 visitors\n- Sunday: 1600 visitors",
+    "response": "```json\n{\n  \"type\": \"line\",\n  \"title\": \"Website Traffic Over a Week\",\n  \"data\": {\n    \"labels\": [\n      \"Monday\",\n      \"Tuesday\",\n      \"Wednesday\",\n      \"Thursday\",\n      \"Friday\",\n      \"Saturday\",\n      \"Sunday\"\n    ],\n    \"datasets\": [\n      {\n        \"label\": \"Visitors\",\n        \"data\": [1200, 1500, 1800, 2100, 2300, 1900, 1600],\n        \"borderColor\": \"rgb(75, 192, 192)\",\n        \"tension\": 0.1\n      }\n    ]\n  }\n}\n```",
+    "chartData": {
+      "type": "line",
+      "title": "Website Traffic Over a Week",
+      "data": {
+        "labels": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "datasets": [
+          {
+            "label": "Visitors",
+            "data": [
+              1200,
+              1500,
+              1800,
+              2100,
+              2300,
+              1900,
+              1600
+            ],
+            "borderColor": "rgb(75, 192, 192)",
+            "tension": 0.1
+          }
+        ]
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "pie",
+    "prompt": "Create a pie chart showing budget allocation:\n- Marketing: 30%\n- Development: 40%\n- Operations: 20%\n- Other: 10%",
+    "response": "```json\n{\n  \"type\": \"pie\",\n  \"title\": \"Budget Allocation\",\n  \"data\": {\n    \"labels\": [\n      \"Marketing\",\n      \"Development\",\n      \"Operations\",\n      \"Other\"\n    ],\n    \"values\": [\n      30,\n      40,\n      20,\n      10\n    ],\n    \"colors\": [\n      \"#FF6384\",\n      \"#36A2EB\",\n      \"#FFCE56\",\n      \"#4BC0C0\"\n    ]\n  }\n}\n```",
+    "chartData": {
+      "type": "pie",
+      "title": "Budget Allocation",
+      "data": {
+        "labels": [
+          "Marketing",
+          "Development",
+          "Operations",
+          "Other"
+        ],
+        "values": [
+          30,
+          40,
+          20,
+          10
+        ],
+        "colors": [
+          "#FF6384",
+          "#36A2EB",
+          "#FFCE56",
+          "#4BC0C0"
+        ]
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "mindmap",
+    "prompt": "Create a mind map for planning a vacation:\n- Center: Vacation Planning\n  - Destination\n    - Beach\n    - Mountains\n  - Budget\n    - Flights\n    - Hotels\n    - Food\n  - Activities\n    - Sightseeing\n    - Adventure sports\n  - Packing\n    - Clothes\n    - Documents",
+    "response": "```json\n{\n  \"type\": \"mindmap\",\n  \"title\": \"Vacation Planning\",\n  \"data\": {\n    \"root\": {\n      \"id\": \"main\",\n      \"text\": \"Vacation Planning\",\n      \"children\": [\n        {\n          \"id\": \"destination\",\n          \"text\": \"Destination\",\n          \"children\": [\n            {\n              \"id\": \"beach\",\n              \"text\": \"Beach\"\n            },\n            {\n              \"id\": \"mountains\",\n              \"text\": \"Mountains\"\n            }\n          ]\n        },\n        {\n          \"id\": \"budget\",\n          \"text\": \"Budget\",\n          \"children\": [\n            {\n              \"id\": \"flights\",\n              \"text\": \"Flights\"\n            },\n            {\n              \"id\": \"hotels\",\n              \"text\": \"Hotels\"\n            },\n            {\n              \"id\": \"food\",\n              \"text\": \"Food\"\n            }\n          ]\n        },\n        {\n          \"id\": \"activities\",\n          \"text\": \"Activities\",\n          \"children\": [\n            {\n              \"id\": \"sightseeing\",\n              \"text\": \"Sightseeing\"\n            },\n            {\n              \"id\": \"adventure_sports\",\n              \"text\": \"Adventure sports\"\n            }\n          ]\n        },\n        {\n          \"id\": \"packing\",\n          \"text\": \"Packing\",\n          \"children\": [\n            {\n              \"id\": \"clothes\",\n              \"text\": \"Clothes\"\n            },\n            {\n              \"id\": \"documents\",\n              \"text\": \"Documents\"\n            }\n          ]\n        }\n      ]\n    }\n  }\n}\n```",
+    "chartData": {
+      "type": "mindmap",
+      "title": "Vacation Planning",
+      "data": {
+        "root": {
+          "id": "main",
+          "text": "Vacation Planning",
+          "children": [
+            {
+              "id": "destination",
+              "text": "Destination",
+              "children": [
+                {
+                  "id": "beach",
+                  "text": "Beach"
+                },
+                {
+                  "id": "mountains",
+                  "text": "Mountains"
+                }
+              ]
+            },
+            {
+              "id": "budget",
+              "text": "Budget",
+              "children": [
+                {
+                  "id": "flights",
+                  "text": "Flights"
+                },
+                {
+                  "id": "hotels",
+                  "text": "Hotels"
+                },
+                {
+                  "id": "food",
+                  "text": "Food"
+                }
+              ]
+            },
+            {
+              "id": "activities",
+              "text": "Activities",
+              "children": [
+                {
+                  "id": "sightseeing",
+                  "text": "Sightseeing"
+                },
+                {
+                  "id": "adventure_sports",
+                  "text": "Adventure sports"
+                }
+              ]
+            },
+            {
+              "id": "packing",
+              "text": "Packing",
+              "children": [
+                {
+                  "id": "clothes",
+                  "text": "Clothes"
+                },
+                {
+                  "id": "documents",
+                  "text": "Documents"
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "gantt",
+    "prompt": "Create a Gantt chart for a website project:\n- Research: Jan 1-15\n- Design: Jan 10-25\n- Development: Jan 20 - Feb 20\n- Testing: Feb 15-28\n- Launch: March 1",
+    "response": "```json\n{\n  \"type\": \"gantt\",\n  \"title\": \"Website Project Timeline\",\n  \"data\": {\n    \"tasks\": [\n      {\n        \"id\": \"research\",\n        \"name\": \"Research\",\n        \"start\": \"2024-01-01\",\n        \"end\": \"2024-01-15\",\n        \"progress\": 100\n      },\n      {\n        \"id\": \"design\",\n        \"name\": \"Design\",\n        \"start\": \"2024-01-10\",\n        \"end\": \"2024-01-25\",\n        \"progress\": 60,\n        \"dependencies\": [\n          \"research\"\n        ]\n      },\n      {\n        \"id\": \"development\",\n        \"name\": \"Development\",\n        \"start\": \"2024-01-20\",\n        \"end\": \"2024-02-20\",\n        \"progress\": 20,\n        \"dependencies\": [\n          \"design\"\n        ]\n      },\n      {\n        \"id\": \"testing\",\n        \"name\": \"Testing\",\n        \"start\": \"2024-02-15\",\n        \"end\": \"2024-02-28\",\n        \"progress\": 0,\n        \"dependencies\": [\n          \"development\"\n        ]\n      },\n      {\n        \"id\": \"launch\",\n        \"name\": \"Launch\",\n        \"start\": \"2024-03-01\",\n        \"end\": \"2024-03-01\",\n        \"progress\": 0,\n        \"dependencies\": [\n          \"testing\"\n        ]\n      }\n    ]\n  }\n}\n```",
+    "chartData": {
+      "type": "gantt",
+      "title": "Website Project Timeline",
+      "data": {
+        "tasks": [
+          {
+            "id": "research",
+            "name": "Research",
+            "start": "2024-01-01",
+            "end": "2024-01-15",
+            "progress": 100
+          },
+          {
+            "id": "design",
+            "name": "Design",
+            "start": "2024-01-10",
+            "end": "2024-01-25",
+            "progress": 60,
+            "dependencies": [
+              "research"
+            ]
+          },
+          {
+            "id": "development",
+            "name": "Development",
+            "start": "2024-01-20",
+            "end": "2024-02-20",
+            "progress": 20,
+            "dependencies": [
+              "design"
+            ]
+          },
+          {
+            "id": "testing",
+            "name": "Testing",
+            "start": "2024-02-15",
+            "end": "2024-02-28",
+            "progress": 0,
+            "dependencies": [
+              "development"
+            ]
+          },
+          {
+            "id": "launch",
+            "name": "Launch",
+            "start": "2024-03-01",
+            "end": "2024-03-01",
+            "progress": 0,
+            "dependencies": [
+              "testing"
+            ]
+          }
+        ]
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "scatter",
+    "prompt": "Create a scatter plot showing the relationship between study hours and test scores:\n- (2 hours, 65%)\n- (3 hours, 70%)\n- (4 hours, 78%)\n- (5 hours, 85%)\n- (6 hours, 90%)\n- (7 hours, 92%)\n- (8 hours, 94%)",
+    "response": "```json\n{\n  \"type\": \"scatter\",\n  \"title\": \"Study Hours vs Test Scores\",\n  \"data\": {\n    \"datasets\": [\n      {\n        \"label\": \"Study Data\",\n        \"data\": [\n          {\n            \"x\": 2,\n            \"y\": 65\n          },\n          {\n            \"x\": 3,\n            \"y\": 70\n          },\n          {\n            \"x\": 4,\n            \"y\": 78\n          },\n          {\n            \"x\": 5,\n            \"y\": 85\n          },\n          {\n            \"x\": 6,\n            \"y\": 90\n          },\n          {\n            \"x\": 7,\n            \"y\": 92\n          },\n          {\n            \"x\": 8,\n            \"y\": 94\n          }\n        ],\n        \"backgroundColor\": \"rgba(255, 99, 132, 0.5)\"\n      }\n    ],\n    \"xAxis\": {\n      \"label\": \"Study Hours\"\n    },\n    \"yAxis\": {\n      \"label\": \"Test Scores (%)\"\n    }\n  }\n}\n```",
+    "chartData": {
+      "type": "scatter",
+      "title": "Study Hours vs Test Scores",
+      "data": {
+        "datasets": [
+          {
+            "label": "Study Data",
+            "data": [
+              {
+                "x": 2,
+                "y": 65
+              },
+              {
+                "x": 3,
+                "y": 70
+              },
+              {
+                "x": 4,
+                "y": 78
+              },
+              {
+                "x": 5,
+                "y": 85
+              },
+              {
+                "x": 6,
+                "y": 90
+              },
+              {
+                "x": 7,
+                "y": 92
+              },
+              {
+                "x": 8,
+                "y": 94
+              }
+            ],
+            "backgroundColor": "rgba(255, 99, 132, 0.5)"
+          }
+        ],
+        "xAxis": {
+          "label": "Study Hours"
+        },
+        "yAxis": {
+          "label": "Test Scores (%)"
+        }
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "area",
+    "prompt": "Create an area chart showing revenue by product over 4 quarters:\nProduct A: Q1: $10k, Q2: $15k, Q3: $18k, Q4: $22k\nProduct B: Q1: $5k, Q2: $8k, Q3: $12k, Q4: $15k\nProduct C: Q1: $3k, Q2: $4k, Q3: $6k, Q4: $8k",
+    "response": "```json\n{\n  \"type\": \"area\",\n  \"title\": \"Revenue by Product Over 4 Quarters\",\n  \"data\": {\n    \"labels\": [\"Q1\", \"Q2\", \"Q3\", \"Q4\"],\n    \"datasets\": [\n      {\n        \"label\": \"Product A\",\n        \"data\": [10000, 15000, 18000, 22000],\n        \"backgroundColor\": \"rgba(255, 99, 132, 0.2)\",\n        \"stack\": \"Revenue\"\n      },\n      {\n        \"label\": \"Product B\",\n        \"data\": [5000, 8000, 12000, 15000],\n        \"backgroundColor\": \"rgba(54, 162, 235, 0.2)\",\n        \"stack\": \"Revenue\"\n      },\n      {\n        \"label\": \"Product C\",\n        \"data\": [3000, 4000, 6000, 8000],\n        \"backgroundColor\": \"rgba(75, 192, 192, 0.2)\",\n        \"stack\": \"Revenue\"\n      }\n    ]\n  }\n}\n```",
+    "chartData": {
+      "type": "area",
+      "title": "Revenue by Product Over 4 Quarters",
+      "data": {
+        "labels": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4"
+        ],
+        "datasets": [
+          {
+            "label": "Product A",
+            "data": [
+              10000,
+              15000,
+              18000,
+              22000
+            ],
+            "backgroundColor": "rgba(255, 99, 132, 0.2)",
+            "stack": "Revenue"
+          },
+          {
+            "label": "Product B",
+            "data": [
+              5000,
+              8000,
+              12000,
+              15000
+            ],
+            "backgroundColor": "rgba(54, 162, 235, 0.2)",
+            "stack": "Revenue"
+          },
+          {
+            "label": "Product C",
+            "data": [
+              3000,
+              4000,
+              6000,
+              8000
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "stack": "Revenue"
+          }
+        ]
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "radar",
+    "prompt": "Create a radar chart for employee skills assessment:\n- Communication: 85\n- Technical Skills: 90\n- Leadership: 75\n- Teamwork: 88\n- Problem Solving: 92\n- Time Management: 80",
+    "response": "```json\n{\n  \"type\": \"radar\",\n  \"title\": \"Employee Skills Assessment\",\n  \"data\": {\n    \"labels\": [\n      \"Communication\",\n      \"Technical Skills\",\n      \"Leadership\",\n      \"Teamwork\",\n      \"Problem Solving\",\n      \"Time Management\"\n    ],\n    \"datasets\": [\n      {\n        \"label\": \"Skills Level\",\n        \"data\": [\n          85,\n          90,\n          75,\n          88,\n          92,\n          80\n        ],\n        \"backgroundColor\": \"rgba(75, 192, 192, 0.2)\",\n        \"borderColor\": \"rgb(75, 192, 192)\"\n      }\n    ],\n    \"scale\": {\n      \"min\": 0,\n      \"max\": 100\n    }\n  }\n}\n```",
+    "chartData": {
+      "type": "radar",
+      "title": "Employee Skills Assessment",
+      "data": {
+        "labels": [
+          "Communication",
+          "Technical Skills",
+          "Leadership",
+          "Teamwork",
+          "Problem Solving",
+          "Time Management"
+        ],
+        "datasets": [
+          {
+            "label": "Skills Level",
+            "data": [
+              85,
+              90,
+              75,
+              88,
+              92,
+              80
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.2)",
+            "borderColor": "rgb(75, 192, 192)"
+          }
+        ],
+        "scale": {
+          "min": 0,
+          "max": 100
+        }
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "tree",
+    "prompt": "Create a tree diagram showing company organization:\n- CEO\n  - CTO\n    - Engineering Manager\n      - Senior Developer\n      - Junior Developer\n    - QA Manager\n      - QA Engineer\n  - CFO\n    - Accounting Manager\n      - Accountant",
+    "response": "```json\n{\n  \"type\": \"tree\",\n  \"title\": \"Company Organization Structure\",\n  \"data\": {\n    \"root\": {\n      \"id\": \"ceo\",\n      \"name\": \"CEO\",\n      \"children\": [\n        {\n          \"id\": \"cto\",\n          \"name\": \"CTO\",\n          \"children\": [\n            {\n              \"id\": \"engineering_manager\",\n              \"name\": \"Engineering Manager\",\n              \"children\": [\n                {\n                  \"id\": \"senior_developer\",\n                  \"name\": \"Senior Developer\"\n                },\n                {\n                  \"id\": \"junior_developer\",\n                  \"name\": \"Junior Developer\"\n                }\n              ]\n            },\n            {\n              \"id\": \"qa_manager\",\n              \"name\": \"QA Manager\",\n              \"children\": [\n                {\n                  \"id\": \"qa_engineer\",\n                  \"name\": \"QA Engineer\"\n                }\n              ]\n            }\n          ]\n        },\n        {\n          \"id\": \"cfo\",\n          \"name\": \"CFO\",\n          \"children\": [\n            {\n              \"id\": \"accounting_manager\",\n              \"name\": \"Accounting Manager\",\n              \"children\": [\n                {\n                  \"id\": \"accountant\",\n                  \"name\": \"Accountant\"\n                }\n              ]\n            }\n          ]\n        }\n      ]\n    }\n  }\n}\n```",
+    "chartData": {
+      "type": "tree",
+      "title": "Company Organization Structure",
+      "data": {
+        "root": {
+          "id": "ceo",
+          "name": "CEO",
+          "children": [
+            {
+              "id": "cto",
+              "name": "CTO",
+              "children": [
+                {
+                  "id": "engineering_manager",
+                  "name": "Engineering Manager",
+                  "children": [
+                    {
+                      "id": "senior_developer",
+                      "name": "Senior Developer"
+                    },
+                    {
+                      "id": "junior_developer",
+                      "name": "Junior Developer"
+                    }
+                  ]
+                },
+                {
+                  "id": "qa_manager",
+                  "name": "QA Manager",
+                  "children": [
+                    {
+                      "id": "qa_engineer",
+                      "name": "QA Engineer"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "id": "cfo",
+              "name": "CFO",
+              "children": [
+                {
+                  "id": "accounting_manager",
+                  "name": "Accounting Manager",
+                  "children": [
+                    {
+                      "id": "accountant",
+                      "name": "Accountant"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "network",
+    "prompt": "Create a network diagram showing team connections:\n- Alice connects to Bob and Charlie\n- Bob connects to David and Eve\n- Charlie connects to David\n- David connects to Eve\n- Eve connects to Frank",
+    "response": "```json\n{\n  \"type\": \"network\",\n  \"title\": \"Team Connections\",\n  \"data\": {\n    \"nodes\": [\n      {\n        \"id\": \"alice\",\n        \"label\": \"Alice\",\n        \"group\": \"team\"\n      },\n      {\n        \"id\": \"bob\",\n        \"label\": \"Bob\",\n        \"group\": \"team\"\n      },\n      {\n        \"id\": \"charlie\",\n        \"label\": \"Charlie\",\n        \"group\": \"team\"\n      },\n      {\n        \"id\": \"david\",\n        \"label\": \"David\",\n        \"group\": \"team\"\n      },\n      {\n        \"id\": \"eve\",\n        \"label\": \"Eve\",\n        \"group\": \"team\"\n      },\n      {\n        \"id\": \"frank\",\n        \"label\": \"Frank\",\n        \"group\": \"team\"\n      }\n    ],\n    \"edges\": [\n      {\n        \"source\": \"alice\",\n        \"target\": \"bob\"\n      },\n      {\n        \"source\": \"alice\",\n        \"target\": \"charlie\"\n      },\n      {\n        \"source\": \"bob\",\n        \"target\": \"david\"\n      },\n      {\n        \"source\": \"bob\",\n        \"target\": \"eve\"\n      },\n      {\n        \"source\": \"charlie\",\n        \"target\": \"david\"\n      },\n      {\n        \"source\": \"david\",\n        \"target\": \"eve\"\n      },\n      {\n        \"source\": \"eve\",\n        \"target\": \"frank\"\n      }\n    ]\n  }\n}\n```",
+    "chartData": {
+      "type": "network",
+      "title": "Team Connections",
+      "data": {
+        "nodes": [
+          {
+            "id": "alice",
+            "label": "Alice",
+            "group": "team"
+          },
+          {
+            "id": "bob",
+            "label": "Bob",
+            "group": "team"
+          },
+          {
+            "id": "charlie",
+            "label": "Charlie",
+            "group": "team"
+          },
+          {
+            "id": "david",
+            "label": "David",
+            "group": "team"
+          },
+          {
+            "id": "eve",
+            "label": "Eve",
+            "group": "team"
+          },
+          {
+            "id": "frank",
+            "label": "Frank",
+            "group": "team"
+          }
+        ],
+        "edges": [
+          {
+            "source": "alice",
+            "target": "bob"
+          },
+          {
+            "source": "alice",
+            "target": "charlie"
+          },
+          {
+            "source": "bob",
+            "target": "david"
+          },
+          {
+            "source": "bob",
+            "target": "eve"
+          },
+          {
+            "source": "charlie",
+            "target": "david"
+          },
+          {
+            "source": "david",
+            "target": "eve"
+          },
+          {
+            "source": "eve",
+            "target": "frank"
+          }
+        ]
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "heatmap",
+    "prompt": "Create a heatmap showing store traffic by hour and day:\nDays: Mon-Fri\nHours: 9AM, 12PM, 3PM, 6PM\nValues: \nMon: 20, 45, 30, 55\nTue: 25, 50, 35, 60\nWed: 30, 55, 40, 65\nThu: 35, 60, 45, 70\nFri: 40, 65, 50, 75",
+    "response": "```json\n{\n  \"type\": \"heatmap\",\n  \"title\": \"Store Traffic by Hour and Day\",\n  \"data\": {\n    \"xLabels\": [\n      \"9AM\",\n      \"12PM\",\n      \"3PM\",\n      \"6PM\"\n    ],\n    \"yLabels\": [\n      \"Mon\",\n      \"Tue\",\n      \"Wed\",\n      \"Thu\",\n      \"Fri\"\n    ],\n    \"values\": [\n      [20, 45, 30, 55],\n      [25, 50, 35, 60],\n      [30, 55, 40, 65],\n      [35, 60, 45, 70],\n      [40, 65, 50, 75]\n    ]\n  }\n}\n```",
+    "chartData": {
+      "type": "heatmap",
+      "title": "Store Traffic by Hour and Day",
+      "data": {
+        "xLabels": [
+          "9AM",
+          "12PM",
+          "3PM",
+          "6PM"
+        ],
+        "yLabels": [
+          "Mon",
+          "Tue",
+          "Wed",
+          "Thu",
+          "Fri"
+        ],
+        "values": [
+          [
+            20,
+            45,
+            30,
+            55
+          ],
+          [
+            25,
+            50,
+            35,
+            60
+          ],
+          [
+            30,
+            55,
+            40,
+            65
+          ],
+          [
+            35,
+            60,
+            45,
+            70
+          ],
+          [
+            40,
+            65,
+            50,
+            75
+          ]
+        ]
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "bubble",
+    "prompt": "Create a bubble chart showing market analysis:\n- Product A: Market Share 25%, Growth 15%, Revenue $5M\n- Product B: Market Share 35%, Growth 10%, Revenue $8M\n- Product C: Market Share 20%, Growth 20%, Revenue $3M\n- Product D: Market Share 20%, Growth 5%, Revenue $4M",
+    "response": "```json\n{\n  \"type\": \"bubble\",\n  \"title\": \"Market Analysis of Products\",\n  \"data\": {\n    \"datasets\": [\n      {\n        \"label\": \"Products\",\n        \"data\": [\n          {\n            \"x\": 25,\n            \"y\": 15,\n            \"r\": 10\n          },\n          {\n            \"x\": 35,\n            \"y\": 10,\n            \"r\": 13\n          },\n          {\n            \"x\": 20,\n            \"y\": 20,\n            \"r\": 7\n          },\n          {\n            \"x\": 20,\n            \"y\": 5,\n            \"r\": 9\n          }\n        ],\n        \"backgroundColor\": \"rgba(75, 192, 192, 0.6)\"\n      }\n    ],\n    \"xAxis\": {\n      \"label\": \"Market Share (%)\"\n    },\n    \"yAxis\": {\n      \"label\": \"Growth Rate (%)\"\n    }\n  }\n}\n```",
+    "chartData": {
+      "type": "bubble",
+      "title": "Market Analysis of Products",
+      "data": {
+        "datasets": [
+          {
+            "label": "Products",
+            "data": [
+              {
+                "x": 25,
+                "y": 15,
+                "r": 10
+              },
+              {
+                "x": 35,
+                "y": 10,
+                "r": 13
+              },
+              {
+                "x": 20,
+                "y": 20,
+                "r": 7
+              },
+              {
+                "x": 20,
+                "y": 5,
+                "r": 9
+              }
+            ],
+            "backgroundColor": "rgba(75, 192, 192, 0.6)"
+          }
+        ],
+        "xAxis": {
+          "label": "Market Share (%)"
+        },
+        "yAxis": {
+          "label": "Growth Rate (%)"
+        }
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "waterfall",
+    "prompt": "Create a waterfall chart showing quarterly profit changes:\n- Starting profit: $100k\n- Q1 Sales increase: +$50k\n- Q1 Costs: -$20k\n- Q2 Sales increase: +$60k\n- Q2 Marketing: -$15k\n- Q3 Sales increase: +$40k\n- Q3 Operations: -$25k\n- Final profit: (calculate)",
+    "response": "```json\n{\n  \"type\": \"waterfall\",\n  \"title\": \"Quarterly Profit Changes\",\n  \"data\": {\n    \"categories\": [\n      \"Starting Profit\",\n      \"Q1 Sales Increase\",\n      \"Q1 Costs\",\n      \"Q2 Sales Increase\",\n      \"Q2 Marketing\",\n      \"Q3 Sales Increase\",\n      \"Q3 Operations\",\n      \"Final Profit\"\n    ],\n    \"values\": [\n      {\n        \"value\": 100000,\n        \"type\": \"total\"\n      },\n      {\n        \"value\": 50000,\n        \"type\": \"increase\"\n      },\n      {\n        \"value\": -20000,\n        \"type\": \"decrease\"\n      },\n      {\n        \"value\": 60000,\n        \"type\": \"increase\"\n      },\n      {\n        \"value\": -15000,\n        \"type\": \"decrease\"\n      },\n      {\n        \"value\": 40000,\n        \"type\": \"increase\"\n      },\n      {\n        \"value\": -25000,\n        \"type\": \"decrease\"\n      },\n      {\n        \"value\": 0,\n        \"type\": \"total\"\n      }\n    ]\n  }\n}\n```",
+    "chartData": {
+      "type": "waterfall",
+      "title": "Quarterly Profit Changes",
+      "data": {
+        "categories": [
+          "Starting Profit",
+          "Q1 Sales Increase",
+          "Q1 Costs",
+          "Q2 Sales Increase",
+          "Q2 Marketing",
+          "Q3 Sales Increase",
+          "Q3 Operations",
+          "Final Profit"
+        ],
+        "values": [
+          {
+            "value": 100000,
+            "type": "total"
+          },
+          {
+            "value": 50000,
+            "type": "increase"
+          },
+          {
+            "value": -20000,
+            "type": "decrease"
+          },
+          {
+            "value": 60000,
+            "type": "increase"
+          },
+          {
+            "value": -15000,
+            "type": "decrease"
+          },
+          {
+            "value": 40000,
+            "type": "increase"
+          },
+          {
+            "value": -25000,
+            "type": "decrease"
+          },
+          {
+            "value": 0,
+            "type": "total"
+          }
+        ]
+      }
+    },
+    "success": true
+  },
+  {
+    "type": "sankey",
+    "prompt": "Create a Sankey diagram showing budget flow:\nSources:\n- Federal Funding: $100M\n- State Funding: $50M\n- Private Donations: $30M\nDistribution:\n- Education: $80M\n- Healthcare: $60M\n- Infrastructure: $40M",
+    "response": "```json\n{\n  \"type\": \"sankey\",\n  \"title\": \"Budget Flow\",\n  \"data\": {\n    \"nodes\": [\n      {\n        \"id\": \"federal\",\n        \"label\": \"Federal Funding\",\n        \"value\": 100\n      },\n      {\n        \"id\": \"state\",\n        \"label\": \"State Funding\",\n        \"value\": 50\n      },\n      {\n        \"id\": \"private\",\n        \"label\": \"Private Donations\",\n        \"value\": 30\n      },\n      {\n        \"id\": \"education\",\n        \"label\": \"Education\",\n        \"value\": 80\n      },\n      {\n        \"id\": \"healthcare\",\n        \"label\": \"Healthcare\",\n        \"value\": 60\n      },\n      {\n        \"id\": \"infrastructure\",\n        \"label\": \"Infrastructure\",\n        \"value\": 40\n      }\n    ],\n    \"links\": [\n      {\n        \"source\": \"federal\",\n        \"target\": \"education\",\n        \"value\": 80\n      },\n      {\n        \"source\": \"federal\",\n        \"target\": \"healthcare\",\n        \"value\": 20\n      },\n      {\n        \"source\": \"state\",\n        \"target\": \"education\",\n        \"value\": 0\n      },\n      {\n        \"source\": \"state\",\n        \"target\": \"healthcare\",\n        \"value\": 40\n      },\n      {\n        \"source\": \"state\",\n        \"target\": \"infrastructure\",\n        \"value\": 10\n      },\n      {\n        \"source\": \"private\",\n        \"target\": \"education\",\n        \"value\": 0\n      },\n      {\n        \"source\": \"private\",\n        \"target\": \"healthcare\",\n        \"value\": 0\n      },\n      {\n        \"source\": \"private\",\n        \"target\": \"infrastructure\",\n        \"value\": 0\n      }\n    ]\n  }\n}\n```",
+    "chartData": {
+      "type": "sankey",
+      "title": "Budget Flow",
+      "data": {
+        "nodes": [
+          {
+            "id": "federal",
+            "label": "Federal Funding",
+            "value": 100
+          },
+          {
+            "id": "state",
+            "label": "State Funding",
+            "value": 50
+          },
+          {
+            "id": "private",
+            "label": "Private Donations",
+            "value": 30
+          },
+          {
+            "id": "education",
+            "label": "Education",
+            "value": 80
+          },
+          {
+            "id": "healthcare",
+            "label": "Healthcare",
+            "value": 60
+          },
+          {
+            "id": "infrastructure",
+            "label": "Infrastructure",
+            "value": 40
+          }
+        ],
+        "links": [
+          {
+            "source": "federal",
+            "target": "education",
+            "value": 80
+          },
+          {
+            "source": "federal",
+            "target": "healthcare",
+            "value": 20
+          },
+          {
+            "source": "state",
+            "target": "education",
+            "value": 0
+          },
+          {
+            "source": "state",
+            "target": "healthcare",
+            "value": 40
+          },
+          {
+            "source": "state",
+            "target": "infrastructure",
+            "value": 10
+          },
+          {
+            "source": "private",
+            "target": "education",
+            "value": 0
+          },
+          {
+            "source": "private",
+            "target": "healthcare",
+            "value": 0
+          },
+          {
+            "source": "private",
+            "target": "infrastructure",
+            "value": 0
+          }
+        ]
+      }
+    },
+    "success": true
+  }
+]

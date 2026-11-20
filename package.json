@@ -1,0 +1,33 @@
+{
+  "name": "ai-tutoring-app",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "npm run dev:server & npm run dev:web",
+    "dev:web": "cd web && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "build": "npm run build:shared && npm run build:server && npm run build:web",
+    "build:web": "cd web && npm run build",
+    "build:server": "cd server && npm run build",
+    "build:shared": "cd shared && npm run build",
+    "install:all": "npm install && cd web && npm install && cd ../server && npm install && cd ../shared && npm install",
+    "test": "npm run test:web && npm run test:server",
+    "test:web": "cd web && npm run test -- --run",
+    "test:server": "cd server && npm test",
+    "lint": "npm run lint:web && npm run lint:server",
+    "lint:web": "cd web && npm run lint",
+    "lint:server": "cd server && npm run lint"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "prettier": "^3.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "dependencies": {
+    "openai": "^5.10.1",
+    "svix": "^1.69.0"
+  }
+}

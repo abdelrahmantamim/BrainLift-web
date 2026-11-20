@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600;700&family=Nunito:wght@600;700&display=swap" />
+<style>
+  html, body { margin: 0; }
+  body {
+    width: 1200px; height: 630px; overflow: hidden;
+    background: #FFF8F0;
+    font-family: 'Nunito', sans-serif; color: #2D2D2D;
+    position: relative;
+  }
+  .frame { position: absolute; inset: 28px; border: 6px solid #2C3E50; border-radius: 34px; background: #fff; box-shadow: 14px 14px 0 var(--accent, #FF6B6B); }
+  .content { position: absolute; left: 84px; top: 84px; width: 700px; }
+  .brand { display: flex; align-items: center; gap: 18px; font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 40px; color: #2C3E50; }
+  .brand img { width: 72px; height: 72px; border-radius: 18px; border: 4px solid #2C3E50; }
+  h1 { font-family: 'Fredoka', sans-serif; font-weight: 700; font-size: 66px; line-height: 1.05; margin: 44px 0 26px; color: #2C3E50; letter-spacing: -0.5px; }
+  p { font-size: 28px; line-height: 1.35; margin: 0; color: #5a5a5a; font-weight: 600; }
+  .cards { position: absolute; right: 70px; top: 120px; width: 320px; }
+  .card { background: #fff; border: 5px solid #2C3E50; border-radius: 22px; padding: 22px 24px; font-family: 'Fredoka', sans-serif; font-weight: 600; font-size: 24px; color: #2C3E50; margin-bottom: 26px; transform: rotate(-3deg); }
+  .card:nth-child(1) { box-shadow: 8px 8px 0 #FFD93D; transform: rotate(3deg); }
+  .card:nth-child(2) { box-shadow: 8px 8px 0 #4ECDC4; }
+  .card:nth-child(3) { box-shadow: 8px 8px 0 #C3ACD0; transform: rotate(2deg); }
+  .card small { display: block; font-family: 'Nunito', sans-serif; font-weight: 600; font-size: 17px; color: #7a7a7a; margin-top: 6px; }
+  .url { position: absolute; left: 84px; bottom: 76px; font-size: 26px; font-weight: 700; color: #2C3E50; }
+</style>
+</head>
+<body>
+  <div class="frame"></div>
+  <div class="content">
+    <div class="brand"><img src="../public/icon-128x128.png" alt="" /><span>BrainLift</span></div>
+    <h1 id="title">Your notes, turned into quizzes and flashcards</h1>
+    <p id="sub">Snap a page or upload a PDF. Study it with spaced repetition and practice what you got wrong.</p>
+  </div>
+  <div class="cards">
+    <div class="card">What does the mitochondrion do?<small>Flashcard · due today</small></div>
+    <div class="card">Quiz: Chapter 4, 10 questions<small>Scanned from notes</small></div>
+    <div class="card">Practice my mistakes<small>6 cards from last quiz</small></div>
+  </div>
+  <div class="url">getbrainlift.app</div>
+</body>
+</html>

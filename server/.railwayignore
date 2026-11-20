@@ -1,0 +1,17 @@
+# Ignore Python parser directories
+../python-parser/
+../unified-parser/
+
+# Ignore other non-server directories
+../mobile/
+../web/
+../admin-dashboard/
+../migration/
+../native/
+../old-code-july/
+
+# Ignore development files
+*.log
+node_modules/
+.env.local
+.DS_Store

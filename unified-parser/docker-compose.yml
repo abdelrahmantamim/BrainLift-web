@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  unified-parser:
+    build: .
+    ports:
+      - "8002:8002"
+    environment:
+      - ENVIRONMENT=development
+      - SUPABASE_URL=${SUPABASE_URL}
+      - SUPABASE_ANON_KEY=${SUPABASE_ANON_KEY}
+      - SUPABASE_SERVICE_KEY=${SUPABASE_SERVICE_KEY}
+      - REDIS_URL=redis://redis:6379
+      - OCR_LANGUAGES=en,es,fr,de,ar
+      - SPACY_MODEL=en_core_web_lg
+    depends_on:
+      - redis
+    volumes:
+      - ./app:/app/app
+    networks:
+      - parser-network
+
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    networks:
+      - parser-network
+
+
+volumes:
+  redis-data:
+
+networks:
+  parser-network:
+    driver: bridge

@@ -1,0 +1,45 @@
+# Core Framework
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+pydantic==2.5.0
+pydantic-settings==2.0.3
+
+# Document Parsing (basic)
+python-docx==1.1.0
+python-pptx==0.6.23
+pdfplumber==0.10.3
+openpyxl==3.1.2
+
+# OCR and Image Processing
+easyocr==1.7.0
+opencv-python==4.8.1.78
+Pillow==10.1.0
+numpy==1.24.3
+
+# NLP and Text Processing
+spacy==3.7.2
+langdetect==1.0.9
+tiktoken==0.5.1
+nltk==3.8.1
+
+# Database and Caching
+supabase==2.0.3
+redis==5.0.1
+
+# Utilities
+python-magic==0.4.27
+chardet==5.2.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# API and Async
+httpx==0.25.2
+aiofiles==23.2.1
+
+# Monitoring and Logging
+structlog==23.2.0
+
+# Development
+pytest==7.4.3
+pytest-asyncio==0.21.1
