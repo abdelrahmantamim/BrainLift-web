@@ -1,6 +1,6 @@
 # BrainLift App
 
-An AI-powered tutoring application with web, server, and admin dashboard components.
+A study app where students keep their notes and files in one place and turn them into quizzes and flashcards, with web, server, and admin dashboard components.
 
 ## 🚀 Quick Start
 
